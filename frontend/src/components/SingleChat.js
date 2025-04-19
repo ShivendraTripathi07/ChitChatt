@@ -84,7 +84,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
         };
         setNewMessage("");
         const { data } = await axios.post(
-          "/api/message",
+          "https://chitchatt-z0dv.onrender.com/api/message",
           {
             content: newMessage,
             chatId: selectedChat,

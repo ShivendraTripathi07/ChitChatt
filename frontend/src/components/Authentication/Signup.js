@@ -112,7 +112,7 @@ const Signup = () => {
         },
       };
       const { data } = await axios.post(
-        "/api/user/signUp",
+        "https://chitchatt-z0dv.onrender.com/api/user/signUp",
         {
           name,
           email,

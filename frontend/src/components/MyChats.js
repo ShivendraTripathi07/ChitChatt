@@ -36,7 +36,7 @@ const MyChats = ({ fetchAgain, onChatSelect }) => {
         },
       };
 
-      const { data } = await axios.get("/api/chat", config);
+      const { data } = await axios.get("https://chitchatt-z0dv.onrender.com/api/chat", config);
       setChats(data);
     } catch (error) {
       toast({
