@@ -52,7 +52,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
       setLoading(true);
 
       const { data } = await axios.get(
-        `/api/message/${selectedChat._id}`,
+        `https://chitchatt-z0dv.onrender.com/api/message/${selectedChat._id}`,
         config
       );
       // console.log(data);
