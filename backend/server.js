@@ -41,10 +41,9 @@ const server = app.listen(
 );
 const io = require("socket.io")(server, {
   pingTimeout: 60000,
-  cors: {
-    origin: "https://gorgeous-cat-8bbd10.netlify.app/",
-    // credentials: true,
-  },
+  cors: ["http://localhost:3000", "https://gorgeous-cat-8bbd10.netlify.app"],
+  methods: ["GET", "POST"],
+  credentials: true,
 });
 
 io.on("connection", (socket) => {
